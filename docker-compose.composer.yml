@@ -1,0 +1,16 @@
+# ローカル環境における composer インストーラとして独立して利用
+
+version: '3.4'
+
+services:
+
+  composer:
+    build:
+      context: .
+      dockerfile: docker/php-fpm/Dockerfile
+      target: php_runtime
+    volumes:
+      - ./docker/php-fpm/conf.d/local.ini:/usr/local/etc/php/conf.d/custom.ini:ro
+      - .:/code:delegated
+    entrypoint: ['composer']
+    command: []

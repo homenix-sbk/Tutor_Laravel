@@ -1,0 +1,140 @@
+@charset "utf-8";
+@import "_color";
+.main {
+    height: 500px;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 5em;
+
+    &__bg-left, &__bg-right {
+        box-sizing: border-box;
+        flex: 0 1 calc(100% / 2);
+        height: 100%;
+        width: -webkit-fill-available;
+    }
+    &__bg-left {
+        background-color: $orange;
+        border-radius: 0 0 0 20vw;
+    }
+    &__bg-right {
+        background-color: $green;
+        border-radius: 0 0 20vw 0;
+    }
+}
+h2 {
+    position: absolute;
+    font-size: 2.5em;
+    top: 100px;
+    left: 200px;
+}
+h2 span {
+    font-size: 1.5em;
+}
+.price {
+    position: absolute;
+    top: 260px;
+    right: 200px;
+    background-color: #ffffff;
+    color: $green;
+    width: 280px;
+    height: 70px;
+    border-radius: 40px;
+    font-size: 1.2em;
+    line-height: 60px;
+    padding: 10px 20px 0;
+}
+.price span {
+    font-size: 2em;
+}
+.main p {
+    position: absolute;
+    bottom: 3em;
+    left: 200px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.flex1, .flex2{
+    display: flex;
+    width: 100%;
+    margin: 2em auto;
+}
+.flex1 {
+  flex-flow: row-reverse;
+}
+.text-box {
+    padding: 5em 1em;
+    width: 40%;
+    text-align: center;
+    h3{
+        font-size: 1.2em;
+        margin-bottom: 1em;
+    }
+    p {
+        margin-bottom: 1.5em;
+        line-height: 2em;
+    }
+}
+.img-box {
+    width: 60%;
+}
+@media screen and (max-width: 1024px) {
+    h3 span {
+        display: inline-block;
+    }
+}
+@media screen and (max-width: 768px) {
+    .main {
+        height: 400px;
+    }
+    h2 {
+        font-size: 2em;
+        top: 50px;
+        left: 100px;
+    }
+    .price {
+        top: 180px;
+        right: 60px;
+        width: 230px;
+        height: 50px;
+        border-radius: 30px;
+        font-size: 1em;
+        line-height: 50px;
+        padding: 5px 20px 0;
+    }
+    .main p {
+        bottom: 2em;
+        left: 100px;
+    }
+    .text-box {
+        padding: 3em 0.5em;
+    }
+}
+@media screen and (max-width: 767px) {
+    h2 {
+        font-size: 1.3em;
+        top: 50px;
+        left: 30px;
+    }
+    .price {
+        top: 140px;
+        right: 30px;
+        width: 180px;
+        height: 40px;
+        border-radius: 25px;
+        font-size: 0.8em;
+        line-height: 40px;
+    }
+    .main p {
+        bottom: 3em;
+        left: 30px;
+        font-size: 1em;
+    }
+    .flex1, .flex2 {
+        display: block;
+    }
+    .text-box, .img-box {
+        width: 100%;
+    }   
+}
