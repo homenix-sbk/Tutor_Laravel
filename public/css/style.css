@@ -306,16 +306,8 @@ header ul.global-nav li a {
   }
 }
 footer {
-  position: absolute;
   width: 100%;
-  bottom: 0;
-  font-size: 85%;
-  background-color: #f9f7f4;
-}
-
-footer #footer {
-  padding-top: 3.5em;
-  text-align: center;
+  background-color: rgba(96, 193, 139, 0.1);
 }
 
 footer #copyright,
@@ -326,47 +318,42 @@ footer #copyright span {
   text-align: center;
 }
 
-#foot-navi-bg {
-  background-color: #f9f7f4;
-}
-
 footer #foot-navi {
+  width: 1200px;
+  margin: 0 auto;
   padding: 50px 40px 30px;
-}
-
-footer #foot-navi dt {
-  position: relative;
-  line-height: 1em;
-  text-indent: 0.7em;
-}
-
-footer #foot-navi dt:before {
-  position: absolute;
-  left: 0;
-  content: "";
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  background: url(../images/common/umemon.png) no-repeat;
-  background-size: contain;
-}
-
-footer #foot-navi dt a {
-  line-height: 100%;
-  padding-left: 10px;
 }
 
 footer #foot-navi ul {
   padding: 5px 20px 20px;
 }
 
-footer #foot-navi li {
-  float: left;
+footer #foot-navi li:before {
+  position: absolute;
+  left: 0;
+  content: "-";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-size: contain;
 }
 
-footer #foot-menu {
-  padding: 15px 40px;
-  display: none;
+footer .kiyaku ul {
+  display: inline-block;
+}
+
+footer .kiyaku ul li {
+  float: left;
+  padding-left: 10px;
+  margin: 2em auto;
+}
+
+footer .kiyaku ul li::after {
+  content: " |";
+}
+
+footer .kiyaku ul li:last-child::after {
+  content: "";
 }
 
 @media screen and (max-width: 767px) {

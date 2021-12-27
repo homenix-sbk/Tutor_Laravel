@@ -187,15 +187,8 @@ header ul.global-nav li a {
 }
 
 footer {
-    position:absolute;
-	width:100%;
-	bottom:0;
-	font-size:85%;
-	background-color: #f9f7f4;
-}
-footer #footer {
-	padding-top: 3.5em;
-	text-align: center;
+	width: 100%;
+	background-color: rgb(96 193 139 / 10%);
 }
 footer #copyright,
 footer #copyright span {
@@ -204,52 +197,55 @@ footer #copyright span {
     padding: 3em 0 1em;
 	text-align: center;
 }
-#foot-navi-bg {
-	background-color: #f9f7f4;
-}
 footer #foot-navi {
+	width: 1200px;
+	margin: 0 auto;
 	padding: 50px 40px 30px;
-}
-footer #foot-navi dt {
-	position:relative;
-	line-height:1em;
-	text-indent: 0.7em;
-}
-footer #foot-navi dt:before {
-	position:absolute;
-	left:0;
-	content:"";
-	display:inline-block;
-	width:1em;
-	height:1em;
-	background:url(../images/common/umemon.png) no-repeat;
-	background-size:contain;
-}
-footer #foot-navi dt a {
-    line-height: 100%;
-    padding-left: 10px;
-}
-footer #foot-navi ul {
+  }
+  
+  footer #foot-navi ul {
 	padding: 5px 20px 20px;
-}
-footer #foot-navi li {
-	float:left
-}
-footer #foot-menu {
-	padding: 15px 40px;
-	display: none;
-}
-@media screen and (max-width: 767px) {
-    footer #foot-navi {
-        padding: 50px 30px 30px;
-    }
+  }
+  
+  footer #foot-navi li:before {
+	position: absolute;
+	left: 0;
+	content: "-";
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	background-size: contain;
+  }
+  
+  footer .kiyaku ul {
+	display: inline-block;
+  }
+  footer .kiyaku ul li {
+	float: left;
+	padding-left: 10px;
+	margin: 2em auto;
+  }
+  footer .kiyaku  ul li::after {
+	content: " |";
+  }
+  
+  footer .kiyaku  ul li:last-child::after {
+	content: "";
+  }
+  
+  @media screen and (max-width: 767px) {
+	footer #foot-navi {
+	  padding: 50px 30px 30px;
+	}
+  
 	footer #footer {
-	    padding-top: 2.5em;
+	  padding-top: 2.5em;
 	}
+  
 	footer #copyright, footer #copyright span {
-	    padding: 2em 0 1em;
+	  padding: 2em 0 1em;
 	}
-}
+  }
 .container {
 	width: 100%;
 	max-width: 1200px;

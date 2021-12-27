@@ -4,25 +4,22 @@
         <meta name="viewport" content="width=device-width">
         <title>家庭教師マッチング</title>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="{{ asset('css/bootstrap3-grid.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
         <link rel="stylesheet" href="{{ asset('css/index.css') }}">
     </head>
     <body>
-        <div id="wrapper">
         <header>
             @include('components.header')
         </header>
-            <div class="main column">
-                <div class="main__bg-left column__item"></div>
-                <div class="main__bg-right column__item"></div>
-                <h2><code>＼</code>個人契約の<code>／</code><br><span>家庭教師マッチングサイト</span></h2>
-                <div class="price">紹介料<span>14,800円</span>のみ</div>
-
+        <div id="wrapper">
+            <div class="main">
+                <h2> <img src="./images/index_h2.png" alt="個人契約の家庭教師マッチングサイト紹介料14,800円だけ" width="970" height="300"></h2>
                 <p>入会金、中間マージン、教材販売などは一切ありません。<br>
                    個人契約となりますので、時給と交通費は先生に直接お支払い下さい。</p>
             </div>
             <div class="container">
-                <div class="flex1">
+                <section class="flex1">
                     <div class="img-box">
                         <img src="./images/index_01.jpg" alt="" width="640" height="427">
                     </div>
@@ -31,8 +28,8 @@
                         <p>いい先生と個人契約できます！<br>ぴったりの先生がきっと見つかります！</P>
                         <a class="btn-green" href="#">登録教師の情報を見る</a>
                     </div>
-                </div>
-                <div class="flex2">
+                </section>
+                <section class="flex2">
                     <div class="img-box">
                         <img src="./images/index_02.jpg" alt="" width="640" height="427">
                     </div>
@@ -43,11 +40,17 @@
                             その後で先生とご家庭で個人契約できます。</P>
                         <a class="btn-green" href="#">家庭教師を申し込む</a>
                     </div>
-                </div>
-                <div class="info">
-                        <h3 class="align-center">サポートもしているので安心です。</h3>
-                        <p>ご要望やご質問がございましたら、お問い合わせフォームよりお気軽にお問い合わせ下さい！</P>
-                </div>
+                </section>
+                <section class="flex1">
+                    <div class="img-box">
+                        <img src="./images/index_03.jpg" alt="" width="640" height="427">
+                    </div>
+                    <div class="text-box">
+                        <h3 class="align-center">サポートもしているので安心</h3>
+                        <p>ご要望やご質問がございましたら、<br>お気軽にお問い合わせ下さい。</P>
+                        <a class="btn-green" href="#">お問い合わせ</a>
+                    </div>
+                </section>
             </div>
 
             @include('components.footer')

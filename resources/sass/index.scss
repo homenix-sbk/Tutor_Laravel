@@ -1,57 +1,22 @@
 @charset "utf-8";
 @import "_color";
 .main {
-    height: 500px;
+    height: 600px;
     color: #fff;
-    display: flex;
-    flex-wrap: wrap;
     position: relative;
+	background-image: url("../images/main_bg.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
     margin-bottom: 5em;
-
-    &__bg-left, &__bg-right {
-        box-sizing: border-box;
-        flex: 0 1 calc(100% / 2);
-        height: 100%;
-        width: -webkit-fill-available;
-    }
-    &__bg-left {
-        background-color: $orange;
-        border-radius: 0 0 0 20vw;
-    }
-    &__bg-right {
-        background-color: $green;
-        border-radius: 0 0 20vw 0;
-    }
 }
 h2 {
-    position: absolute;
-    font-size: 2.5em;
-    top: 100px;
-    left: 200px;
-}
-h2 span {
-    font-size: 1.5em;
-}
-.price {
-    position: absolute;
-    top: 260px;
-    right: 200px;
-    background-color: #ffffff;
-    color: $green;
-    width: 280px;
-    height: 70px;
-    border-radius: 40px;
-    font-size: 1.2em;
-    line-height: 60px;
-    padding: 10px 20px 0;
-}
-.price span {
-    font-size: 2em;
+	padding-top: 80px;
+	text-align: center;
 }
 .main p {
     position: absolute;
-    bottom: 3em;
-    left: 200px;
+    bottom: 6em;
+    left: 20%;
     font-size: 1.2em;
     font-weight: bold;
 }
@@ -80,6 +45,9 @@ h2 span {
     width: 60%;
 }
 @media screen and (max-width: 1024px) {
+    h2 img {
+		width: 80vw;
+    }
     h3 span {
         display: inline-block;
     }
@@ -89,22 +57,10 @@ h2 span {
         height: 400px;
     }
     h2 {
-        font-size: 2em;
-        top: 50px;
-        left: 100px;
-    }
-    .price {
-        top: 180px;
-        right: 60px;
-        width: 230px;
-        height: 50px;
-        border-radius: 30px;
-        font-size: 1em;
-        line-height: 50px;
-        padding: 5px 20px 0;
+        padding-top: 60px;
     }
     .main p {
-        bottom: 2em;
+        bottom: 3em;
         left: 100px;
     }
     .text-box {
@@ -112,24 +68,16 @@ h2 span {
     }
 }
 @media screen and (max-width: 767px) {
-    h2 {
-        font-size: 1.3em;
-        top: 50px;
-        left: 30px;
-    }
-    .price {
-        top: 140px;
-        right: 30px;
-        width: 180px;
-        height: 40px;
-        border-radius: 25px;
-        font-size: 0.8em;
-        line-height: 40px;
+	.main {
+		height: 300px;
+	}
+    h2 img {
+        width: 85vw;
     }
     .main p {
-        bottom: 3em;
-        left: 30px;
-        font-size: 1em;
+    bottom: 5em;
+    left: 30px;
+    font-size: 0.85em;
     }
     .flex1, .flex2 {
         display: block;
