@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import "_reset", "_color";
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;500&display=swap');
 /* =======================================
 	common
 ======================================= */
@@ -11,6 +12,7 @@ body , html {
 	height: 100% !important;
 }　
 body  {
+	font-family: 'M PLUS Rounded 1c', sans-serif;
 	font-size: 14px;
 	color: #666;
 }
@@ -67,16 +69,8 @@ header ul.global-nav {
 }
 
 header ul.global-nav li {
-  margin-left: 3px;
+  margin: 0 10px;
   display: inline-block;
-}
-
-header ul.global-nav li::after {
-  content: " |";
-}
-
-header ul.global-nav li:last-child::after {
-  content: "";
 }
 
 header ul.global-nav li a {
@@ -379,4 +373,32 @@ section{
 	box-shadow    : none;
 	color         : #fff;
 	background    : #524d4b;
+}
+.btn-teacher {
+	display       : inline-block;
+	text-align    : center;
+	cursor        : pointer;
+	padding       : 0 15px;
+	background    : $orange;
+	color         : #fff;
+	line-height   : 1em;
+	transition    : .3s;
+	text-decoration: none;
+	border-radius: 18px;
+}
+.btn-teacher:hover,
+.btn-teacher:focus {
+	text-decoration: none;
+	outline: none;
+}
+.btn-teacher:hover,
+.btn-teacher:focus {
+	color         : #fff;
+	background    : #524d4b;
+}
+.global-nav .btn-teacher a:hover {
+	color: inherit;
+}
+.global-nav .btn-teacher a::after {
+	background: inherit;
 }

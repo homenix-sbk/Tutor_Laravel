@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-
+Route::get('/teacher', 'TeacherController@index');
 // Route::get('/', 'App\Http\Controllers\TutorController@index');
 // Route::post('/', 'App\Http\Controllers\StaffController@post');
 // Route::get('/add', 'App\Http\Controllers\StaffController@add');
