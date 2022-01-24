@@ -1,0 +1,63 @@
+footer {
+	width: 100%;
+	background-color: #f9f9f9;
+}
+footer #copyright {
+    padding: 3em 0 1em;
+	font-size: 0.9em;
+}
+footer #foot-navi {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 50px 40px 30px;
+}
+  
+footer #foot-navi ul {
+	padding: 5px 20px 20px;
+}
+
+footer #foot-navi li:before {
+	position: absolute;
+	left: 0;
+	font-family: FontAwesome;
+	content: "\f138";
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	background-size: contain;
+}
+.student li:before {
+	color: $green;
+}
+.teacher li::before {
+	color: $orange;
+}
+footer .kiyaku ul {
+	display: inline-block;
+	font-size: 0.7em;
+}
+footer .kiyaku ul li {
+	float: left;
+	padding-left: 10px;
+	margin: 2em auto;
+}
+footer .kiyaku  ul li::after {
+	content: " |";
+}
+  
+footer .kiyaku  ul li:last-child::after {
+	content: "";
+}
+@media screen and (max-width: 767px) {
+	footer #foot-navi {
+	  padding: 50px 30px 30px;
+	}
+  
+	footer #footer {
+	  padding-top: 2.5em;
+	}
+  
+	footer #copyright, footer #copyright span {
+	  padding: 2em 0 1em;
+	}
+}

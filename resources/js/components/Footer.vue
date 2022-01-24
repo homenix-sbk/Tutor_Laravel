@@ -1,3 +1,4 @@
+<template>
 <footer>
     <div id="foot-navi" class="row">
         <div class="col-sm-4 col-xs-12">
@@ -34,3 +35,4 @@
     <div id="gotoTop"><a href="#"></a></div>
     <p class="copyright align-center">&copy;2022 HomeNix</p>
 </footer>
+</template>

@@ -1,0 +1,112 @@
+/*btn -----------------------------*/
+.btn {
+	display: inline-block;
+
+	a {
+	display: block;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	margin: 0 auto;
+	padding: 1em 1.5em;
+	cursor        : pointer;
+	color         : #fff;
+	line-height   : 1em;
+	transition    : .3s;
+	}
+	&__area {
+		text-align: center;
+		padding: 2em 0;
+	}
+	&__green a {
+		background    : $green;
+	}
+	
+	&__orange a {
+		background    : $orange-bg;
+	}
+	&__green a, &__orange a {
+		font-size: 1.2em;
+		box-shadow: 4px 4px 3px #ccc;
+	}
+		
+	&__student .active {
+		border: none !important;
+	}
+
+	&__student a {
+		background    : $green;
+	}
+	&__teacher a {
+		background    : $orange-bg;
+	}
+	&__teacher a, &__student a {
+		color         : #fff !important;
+		border-radius: 50vh;
+	}
+	a::after {
+		font-family: 'FontAwesome';
+		content: '\f054';
+		padding-left: 0.5em;
+		position: inherit;
+	}
+	
+	a:hover,
+	a:focus {
+		text-decoration: none;
+		outline: none;
+		box-shadow    : none;
+		color         : #fff;
+		background    : #999;
+	}
+	
+}
+
+.global-nav .btn__teacher a:hover,
+.global-nav .btn__student a:hover {
+	color: inherit;
+}
+.global-nav .btn__teacher a::after,
+.global-nav .btn__student a::after {
+	background: inherit;
+} 
+@media screen and (max-width: 768px) {
+	.btn__teacher {
+		background    : inherit;
+	}
+	.btn__teacher i {
+		display: none;
+	}
+}
+.head {
+	&__student .active {
+		border-bottom: solid 3px $green;
+	}
+	&__teacher .active {
+		border-bottom: solid 3px $orange;
+	}
+	&__student a::after {
+		content: '';
+		background: $green;
+		position: absolute;
+		bottom: -3px;
+		left: 0;
+		transform: scale(0, 1);
+		transform-origin: center top;
+		transition: transform .3s;
+		height: 3px;
+		width: 100%;
+	}
+	&__teacher a::after {
+		content: '';
+		background: $orange;
+		position: absolute;
+		bottom: -3px;
+		left: 0;
+		transform: scale(0, 1);
+		transform-origin: center top;
+		transition: transform .3s;
+		height: 3px;
+		width: 100%;
+	}
+}

@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
-    @include('components.headTeacher')
+    @include('components.header')
     <div id="wrapper" class="fade-in">
         <div class="align-center">
-            <h2>家庭教師・登録の流れ</h2>
-            <p>家庭教師登録は無料です。ぜひご登録ください。</p>
+            <p class="sub-title">About us</p>
+            <h2 class="student" >家庭教師紹介システム</h2>
         </div>
-        <div class="container">
+        <div class="container">        
             <section>
-                <div class="step teacher">
-                    <div class="stepNum teacher">1</div>
+                <div class="step">
+                    <div class="stepNum">1</div>
                 </div>
-                <label class="process__title teacher">登録フォームに必要事項を入力し送信</label>
+                <label class="process__title">登録フォームに必要事項を入力し送信</label>
                 <div class="process__text">
                     <div class="lineArea"></div>
                     <p>登録フォームに必要事項を入力後、確認画面で間違いがないことを確認し送信ください。<br>
@@ -27,20 +27,20 @@
                     なお、別のページに移るときに、ブラウザの設定によってメッセージが出ることがありますが、送信データを暗号化している影響ですので心配する必要はありません。
                     </p>
                 </div>
-                <div class="step teacher">
-                    <div class="stepNum teacher">2</div>
+                <div class="step">
+                    <div class="stepNum">2</div>
                 </div>
-                <label class="process__title teacher">家庭教師リストへの掲載と登録メールの確認</label>
+                <label class="process__title">家庭教師リストへの掲載と登録メールの確認</label>
                 <div class="process__text">
                     <div class="lineArea"></div>
                     <p>家庭教師リストに、あなたの情報が掲載されますのでご確認ください。<br>
                     登録後直ちに登録完了のメールが自動的に送信される設定になっています。もしもメールが届かない場合は、入力されたメールアドレスが間違っている可能性がありますので、お問い合わせフォームよりご連絡下さい。
                     </p>
                 </div>
-                <div class="step teacher">
-                    <div class="stepNum teacher">3</div>
+                <div class="step">
+                    <div class="stepNum">3</div>
                 </div>
-                <label class="process__title teacher">生徒の紹介</label>
+                <label class="process__title">生徒の紹介</label>
                 <div class="process__text">
                     <div class="lineArea"></div>
                     <p>あなたに依頼されたい生徒が現れた場合、メールか電話にてお知らせしますので、お引き受けになるおつもりがあるかどうかを速やかに返信してください。<br>
@@ -48,20 +48,20 @@
                     または、依頼者の希望による別のケースとして、引き受け可能とのお返事をくださった先生方すべてと面接、体験授業をした上で、１番良いと思われる先生に決定される場合もありますのでご了承ください。
                     </p>
                 </div>
-                <div class="step teacher">
-                    <div class="stepNum teacher">4</div>
+                <div class="step">
+                    <div class="stepNum">4</div>
                 </div>
-                <label class="process__title teacher">生徒のご家庭への連絡と面接</label>
+                <label class="process__title">生徒のご家庭への連絡と面接</label>
                 <div class="process__text">
                     <div class="lineArea"></div>
                     <p>あなたから生徒のご家庭に連絡し、面接の日時等をお決めください。面接の際、指導の方針や曜日時間、条件などについて話し合ってください。<br>
                     面接の結果は、直接生徒のご家庭から知らされる場合もありますし、弊社を通して知らされることもあります。残念ながら不採用の場合には、別件の紹介をお待ちください。
                     </p>
                 </div>
-                <div class="step teacher">
-                    <div class="stepNum teacher">5</div>
+                <div class="step">
+                    <div class="stepNum">5</div>
                 </div>
-                <label class="process__title teacher">指導開始</label>
+                <label class="process__title">指導開始</label>
                 <div class="process__text">
                     <div class="lineArea"></div>
                     <p>無事、ご家庭との契約が成立した場合は弊社までご連絡ください。期待に添えるよう、誠実に指導を行ってください。<br>

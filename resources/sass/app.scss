@@ -1,0 +1,10 @@
+@charset "UTF-8";
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+// Variables
+@import 'variables';
+
+//Scss
+@import "bootstrap3-grid", "reset", "style", "header", "footer", "btn", "index", "student", "teacher";

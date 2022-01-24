@@ -1,7 +1,4 @@
 {
-    "/css/_color.css": "/css/_color.css",
-    "/css/_reset.css": "/css/_reset.css",
-    "/css/app.css": "/css/app.css",
-    "/css/index.css": "/css/index.css",
-    "/css/style.css": "/css/style.css"
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css"
 }

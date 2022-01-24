@@ -18,8 +18,6 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/about', 'StudentController@about');
-
 Route::get('/teacher', 'TeacherController@index');
 Route::get('/teacher/add', 'TeacherController@add');
 Route::post('/teacher/add', 'TeacherController@create');
